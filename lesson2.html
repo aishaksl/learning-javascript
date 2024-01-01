@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   array birden çok değeri bir arada depolayabilmemizi sağlar
+      // array lerin indexlenmesi  0,1,2,3 ... şeklinde olur.aşağıdaki örneklerde 0.index java,1.index phtyon,..diye devam eder.
+      var array = ["Java", "Phyton", "C++", "C"];
+      alert(array[0]);
+      alert(array[1]);
+      alert(array[2]);
+      alert(array[3]);
+      alert(array[4]);
+      //   yukarıda alert(array[4]); değeri verildiğinde 4 değerimiz olmadığından undefined diye hata verecek
+      //   Eklememiz için ilk yol:
+      array[4] = "Php";
+      alert(array);
+      //   Eklememiz için ikinci yol:
+      array.push("Go");
+      alert(array);
+      //   array içindeki toplam eleman sayısını bulmak için:
+      alert(array.length);
+    </script>
+  </body>
+</html>
