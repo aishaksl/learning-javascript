@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // function+the name of function+(parametreler){
+      //     console.log("");
+      // }
+      // name of function+(parametreler);
+
+      function greet(name) {
+        console.log("Merhaba " + name);
+      }
+
+      greet("Furkan");
+      greet("Ayşe");
+
+      function sum(a, b, c) {
+        console.log("Total " + (a + b + c));
+      }
+
+      sum(3, 4, 5);
+
+      //   return fonksiyonun çağırıldığı yere içerden bir değer dönmemizi sağlar
+      // return birden çok fonksiyon kullanılacağı zaman ve her bir fonksiyon belli bir çıktı üretmesi gerektiği zaman kullanılır.
+
+      function sum2(a, b, c) {
+        return a + b + c;
+      }
+
+      let total = sum2(3, 4, 5);
+      console.log("Totals " + total);
+    </script>
+  </body>
+</html>
