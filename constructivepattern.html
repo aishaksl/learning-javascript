@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function employee(name, surname, number) {
+        this.name = name;
+        this.surname = surname;
+        this.number = number;
+        this.showInfo = function () {
+          return (
+            "Name: " +
+            this.name +
+            "\nSurname: " +
+            this.surname +
+            "\nNumber" +
+            this.number
+          );
+        };
+      }
+      let employee1 = new employee("Ayse", "Köseoğlu", "1234");
+      let employee2 = new employee("Furkan", "Köseoğlu", "12345");
+      console.log(employee1.showInfo());
+      console.log(employee2.showInfo());
+    </script>
+  </body>
+</html>
