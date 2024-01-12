@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // console.log da obje ismi sonrası nokta konur ve sonrasında obje özelligi yazılır
+      // Obje içinde obje oluşturulabilir(adress)
+
+      //   1.YOL
+      let employee = {
+        name: "Ayse",
+        surname: "Köseoğlu",
+        number: "12345",
+        programmingLanguages: ["HTML", "CSS", "Javascript"],
+        adress: {
+          avenue: "Kabil",
+          street: "1234",
+        },
+        nameInformations: function () {
+          return "Name: " + this.name + " Surname: " + this.surname;
+        },
+      };
+
+      console.log(employee.name);
+      console.log(employee.number);
+      console.log(employee.programmingLanguages);
+      console.log(employee.adress.street);
+      console.log(employee.nameInformations());
+
+      //   2.YOL
+
+      //   let employee = new Object();
+      //   employee.name = "Ayse";
+      //   employee.surname = "Köseoğlu";
+      //   employee.nameInformations = function () {
+      //     return "nameInformations" + this.name + " " + this.surname;
+      //   };
+
+      //   console.log(employee.name);
+      //   console.log(employee.surname);
+      //   console.log(employee.nameInformations());
+
+      // **2.YOL da ikinci bir çalışan eklediğimiz zaman değerleri teker teker vermemiz gerekir.Bu da işimizi zorlaştırır.
+      // ANCAK constructive pattern kullanarak bir tane contructive kullanarak objelerimizi üretebilir
+    </script>
+  </body>
+</html>
