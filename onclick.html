@@ -15,6 +15,10 @@
 
       <!-- 3) onclick="onClick(this)" diyerek buttonla ilgili tüm işlemleri yapabiliriz.Bu yontem kodun daha düzenli olmasını sağlar -->
       <button onclick="onClick(this)">Button3</button>
+
+      <!-- 4 -->
+      <p id="para1">Paragraph</p>
+      <button onclick="changeColor()">Button</button>
     </div>
     <script>
       // (1)
@@ -25,6 +29,12 @@
       // (3)
       function onClick(element) {
         element.innerHTML = "Button clicked";
+      }
+
+      //   (4)
+      function changeColor() {
+        var element = document.getElementById("para1");
+        element.style.color = "red";
       }
     </script>
   </body>
