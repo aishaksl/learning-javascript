@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- 1) Fonksiyon atayarak butonla ilgili işlem yapmak için: -->
+      <button onclick="onClick()">Button</button>
+
+      <!-- 2) Butona tıklandığında içeriğin değişmesi için this.innerHTML  kullanılır. -->
+      <button onclick="this.innerHTML ='Button clicked'">Button2</button>
+
+      <!-- 3) onclick="onClick(this)" diyerek buttonla ilgili tüm işlemleri yapabiliriz.Bu yontem kodun daha düzenli olmasını sağlar -->
+      <button onclick="onClick(this)">Button3</button>
+
+      <!-- 4) -->
+      <p id="para1">Paragraph</p>
+      <button onclick="changeColor()">Button</button>
+    </div>
+
+    <script>
+      // (1)
+      function onClick() {
+        alert("Button clicked...");
+      }
+
+      // (3)
+      function onClick(element) {
+        element.innerHTML = "Button clicked";
+      }
+
+      // (4)
+      function changeColor() {
+        let element = document.getElementById("para1");
+        element.style.color = "red";
+      }
+    </script>
+  </body>
+</html>
