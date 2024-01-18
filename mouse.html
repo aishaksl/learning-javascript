@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="para1">Paraghraph</p>
+    <button onmouseover="mouseover()" onmouseout="mouseout()">Button</button>
+    <script>
+      function mouseover() {
+        let element = document.getElementById("para1");
+        element.innerHTML = "Mouse Over Effect";
+      }
+      function mouseout() {
+        let element = document.getElementById("para1");
+        element.innerHTML = "Mouse Out Effect";
+      }
+    </script>
+  </body>
+</html>
